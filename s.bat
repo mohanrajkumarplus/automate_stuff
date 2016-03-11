@@ -1,0 +1,1 @@
+@py.exe "C:\Users\IBM_ADMIN\Google Drive\NOTES_bkp_30_july\s.py" %*
