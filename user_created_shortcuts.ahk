@@ -32,6 +32,11 @@ Run all_in_all.xlsx
 Run notepad++.exe
 return
 
+F12:: ; Win+g
+   Send ^c	
+   Run http://www.google.com/search?q=meaning+of+%clipboard%
+Return
+
 #g:: ; Win+g - copy the selected text and past it in the internet explorer
    Send ^c	
    Run http://www.google.com/search?q=%clipboard%
