@@ -95,5 +95,13 @@ RunOrActivateTrayTipOff:
 	TrayTip
 Return
 
-
+~PrintScreen::
+RunOrActivate("ONENOTE.EXE")
+Send {PrintScreen}
+Send ^v
+FormatTime, TimeString,, MMMM d, yyyy hh:mm:ss tt
+Send, %TimeString%
+Send, {ENTER}
+Send, {ENTER}
+return
 
