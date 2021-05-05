@@ -1,0 +1,5 @@
+^+m:: ; open everything in one go
+Run C:\Users\Mohan\AppData\Local\Programs\Notion\Notion.exe
+Run C:\Users\Mohan\AppData\Local\Programs\RemNote\RemNote.exe
+Run C:\Program Files\Anki\anki.exe
+return
