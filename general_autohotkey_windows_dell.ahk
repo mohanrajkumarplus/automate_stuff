@@ -2,6 +2,39 @@
 ;#a::RunOrActivate("all_in_all.xlsx")
 #m::RunOrActivate("ONENOTE.EXE")
 
+
+*Numpad1::
+	coordmode, mouse, screen
+	mousemove, 1003,516
+	
+*Numpad2::
+	coordmode, mouse, screen
+	mousemove, -1143,668
+	
+*Numpad3::
+	coordmode, mouse, screen
+	mousemove, 1217,-713
+	
+*Numpad4::
+	coordmode, mouse, screen
+	mousemove, -1404,-803
+
+*Numpad7::
+	coordmode, mouse, screen
+	mousemove, 1003,516
+	
+*Numpad8::
+	coordmode, mouse, screen
+	mousemove, -1143,668
+	
+*Numpad9::
+	coordmode, mouse, screen
+	mousemove, 1217,-713
+	
+*Numpad6::
+	coordmode, mouse, screen
+	mousemove, -1404,-803
+
 $z::
 	KeyWait, z, T0.5
 	If ErrorLevel {
