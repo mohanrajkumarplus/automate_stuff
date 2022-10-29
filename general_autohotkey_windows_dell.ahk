@@ -2,6 +2,9 @@
 ;#a::RunOrActivate("all_in_all.xlsx")
 #m::RunOrActivate("ONENOTE.EXE")
 
+*Numpad0::
+	coordmode, mouse, screen
+	mousemove, 1003,516
 
 *Numpad1::
 	coordmode, mouse, screen
@@ -18,10 +21,14 @@
 *Numpad4::
 	coordmode, mouse, screen
 	mousemove, -1404,-803
-
+	
+*Numpad5::
+	coordmode, mouse, screen
+	mousemove, -1143,668
+	
 *Numpad7::
 	coordmode, mouse, screen
-	mousemove, 1003,516
+	mousemove, -1404,-803
 	
 *Numpad8::
 	coordmode, mouse, screen
@@ -33,7 +40,7 @@
 	
 *Numpad6::
 	coordmode, mouse, screen
-	mousemove, -1404,-803
+	mousemove, 1217,-713
 
 $z::
 	KeyWait, z, T0.5
