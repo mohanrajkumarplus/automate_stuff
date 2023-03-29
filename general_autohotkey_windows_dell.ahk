@@ -2,6 +2,10 @@
 ;#a::RunOrActivate("all_in_all.xlsx")
 #m::RunOrActivate("ONENOTE.EXE")
 
+`::
+Send, #+s
+return
+
 *Numpad0::
 	coordmode, mouse, screen
 	mousemove, 1003,516
@@ -113,35 +117,35 @@ else
 }
 return
 
-`:: ; snipping tool opening in windows 
-Process, Exist, SnippingTool.exe
-If ErrorLevel <> 0 
-{
-	Process, Close, SnippingTool.exe
-	Sleep, 1000
-	Run, %windir%\system32\SnippingTool.exe
-	Sleep, 1000 
-	Send ^n
-	Sleep, 500
-	Send ^c	
-	Sleep, 1000
-	Send ^c	
-	Sleep, 1500
-	Send ^c
-	Sleep, 2500
-	Send ^c
-	Sleep, 3500
-	Send ^c
-}
-else 
-{
-	Run, %windir%\system32\SnippingTool.exe
-	Sleep, 1000 
-	Send ^n
-	Sleep, 3500
-	Send ^c
-}
-return
+;`:: ; snipping tool opening in windows 
+;Process, Exist, SnippingTool.exe
+;If ErrorLevel <> 0 
+;{
+;	Process, Close, SnippingTool.exe
+;	Sleep, 1000
+;	Run, %windir%\system32\SnippingTool.exe
+;	Sleep, 1000 
+;	Send ^n
+;	Sleep, 500
+;	Send ^c	
+;	Sleep, 1000
+;	Send ^c	
+;	Sleep, 1500
+;	Send ^c
+;	Sleep, 2500
+;	Send ^c
+;	Sleep, 3500
+;	Send ^c
+;}
+;else 
+;{
+;	Run, %windir%\system32\SnippingTool.exe
+;	Sleep, 1000 
+;	Send ^n
+;	Sleep, 3500
+;	Send ^c
+;}
+;return
 
 MButton:: ; snipping tool opening in windows 
 Process, Exist, SnippingTool.exe
